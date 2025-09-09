@@ -1,0 +1,194 @@
+ * {
+     box-sizing: border-box;
+     font-family: 'Arial', sans-serif;
+ }
+
+
+ body {
+     background-color: #f5f5f5;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+.icon-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-button {
+    background: none;
+    color:#000;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+   
+}
+
+.icon-dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.icon-dropdown-menu a {
+    width: 150px;
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon-dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Menü aktif olduğunda göster */
+.icon-dropdown-menu.active {
+    display: block;
+}
+
+ .login-container {
+     margin: 20px auto;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     width: 500px;
+     height: auto;
+     padding: 30px;
+
+ }
+
+ h1 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 30px;
+ }
+
+ .profile-img {
+     width: 100px;
+     height: 100px;
+     background-color: #525552;
+     border-radius: 50%;
+     margin: 0 auto 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-size: 36px;
+     font-weight: bold;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+     color: #555;
+     font-weight: bold;
+ }
+
+ input {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ input:focus {
+     outline: none;
+     border-color: #4CAF50;
+ }
+
+ .login-btn {
+     width: 100%;
+     padding: 12px;
+     background-color: #969996;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+ .login-btn:hover {
+     background-color: #292b29;
+ }
+
+ .error {
+     color: red;
+     font-size: 14px;
+     margin-top: 5px;
+     display: none;
+ }
+
+ /* Başarı mesajı stili */
+ .success-card {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 340px;
+     height: 200px;
+     background-color: white;
+     border-radius: 15px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     z-index: 1000;
+     display: none;
+ }
+
+ .success-card i {
+     font-size: 50px;
+     color: #33dc33;
+     margin-bottom: 20px;
+ }
+
+ .success-card p {
+     font-size: 18px;
+     color: #333;
+     margin: 0;
+ }
+
+ .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 999;
+     display: none;
+ }
+
+ .register-link {
+     text-align: center;
+     margin-top: 20px;
+     color: #555;
+ }
+
+ .register-link a {
+     color: #151615;
+     text-decoration: none;
+ }
+
+ .register-link a:hover {
+     text-decoration: underline;
+ }
+

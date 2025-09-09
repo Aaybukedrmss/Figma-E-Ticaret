@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casual Clothes</title>
+  <link rel="stylesheet" href="Categorypage.css">
+  <link rel="stylesheet" href="../Header/Header.css">
+  <link rel="stylesheet" href="../Footer/Footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <header>
+        <div class="banner">
+            <h5>
+                Kaydolun ve ilk siparişinizde %20 indirim kazanın. Hemen Kaydolun
+                <i class="fa-solid fa-x"></i>
+            </h5>
+        </div>
+        <div class="navbar">
+            <h2>SHOP.CO</h2>
+            <ul>
+                <li><a href="/SiteAnasayfa/SiteAnasayfa.html">Anasayfa</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Hobi & Oyuncak</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Kitap</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Kırtasiye</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Elektronik</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Müzik</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Bilgisayar & Tablet</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="button">Ara</button>
+            </div>
+            <div class="icons">
+
+                <div class="alısverissepet">
+                    <a href="../Sepet/Sepet.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="icon-menu-container">
+                    <button class="icon-button" id="menuToggle">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <div class="icon-dropdown-menu" id="dropdownMenu">
+                        <a href="profil.html">Profil / Hesap Ayarları</a>
+                        <a href="../Siparislerim/Siparislerim.html">Siparişlerim</a>
+                        <a href="../Favorilerim/Favorilerim.html">Favorilerim</a>
+                        <a href="../Yardim/Yardim.html">Yardım/Şikayet/Öneri</a>
+                        <a href="../Cikis/Cikis.html">Çıkış Yap</a>
+                    </div>
+                </div>
+                <a href="../Favorilerim/Favorilerim.html"><i class="fa-solid fa-heart"></i></a>
+            </div>
+        </div>
+    </header>
+
+  <main class="product-page">
+    <aside class="filter-sidebar">
+
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <h3>Kategoriler</h3>
+        <ul>
+          <li><a href="#" data-category="Kitap">Kitap</a></li>
+          <li><a href="#" data-category="Hobi&Oyuncak">Hobi&Oyuncak</a></li>
+          <li><a href="#" data-category="Kırtasiye">Kırtasiye</a></li>
+          <li><a href="#" data-category="Elektronik">Elektronik</a></li>
+          <li><a href="#" data-category="Müzik">Müzik</a></li>
+          <li><a href="#" data-category="Bilgisayar&Tablet">Bilgisayar&Tablet</a></li>
+        </ul>
+
+      </div>
+
+      <div class="filter-group">
+        <h3>Fiyat</h3>
+        <label>
+          Min:
+          <input type="number" id="min-price" value="50" />
+        </label>
+        <label>
+          Max: <input type="number" id="max-price" value="200" />
+        </label>
+      </div>
+      <!--
+      <div class="colors">
+        <span class="color" data-color="red" style="background-color: red;"></span>
+        <span class="color" data-color="blue" style="background-color: blue;"></span>
+        <span class="color" data-color="green" style="background-color: green;"></span>
+        <span class="color" data-color="pink" style="background-color: pink;"></span>
+        <span class="color" data-color="orange" style="background-color: orange;"></span>
+        <span class="color" data-color="black" style="background-color: black;"></span>
+      </div>
+
+      <div class="filter-group">
+        <h3>Size</h3>
+        <div class="sizes">
+          <button>Small</button>
+          <button>Medium</button>
+          <button>Large</button>
+        </div>
+      </div>
+-->
+      <div class="filter-group">
+        <h3>Marka</h3>
+        <ul>
+          <li><a href="#" data-brand="Anatolian">Anatolian</a></li>
+          <li><a href="#" data-brand="Apple">Apple</a></li>
+          <li><a href="#" data-brand="B&W">B&amp;W</a></li>
+          <li><a href="#" data-brand="Barbie">Barbie</a></li>
+          <li><a href="#" data-brand="Baseus">Baseus</a></li>
+          <li><a href="#" data-brand="BearAndDeer">BearAndDeer</a></li>
+          <li><a href="#" data-brand="Coral High">Coral High</a></li>
+          <li><a href="#" data-brand="NULL">Diğer</a></li>
+          <li><a href="#" data-brand="Edding">Edding</a></li>
+          <li><a href="#" data-brand="FUJIFILM instax">FUJIFILM instax</a></li>
+          <li><a href="#" data-brand="Gıpta">Gıpta</a></li>
+          <li><a href="#" data-brand="Harry Potter">Harry Potter</a></li>
+          <li><a href="#" data-brand="Hello Kitty">Hello Kitty</a></li>
+          <li><a href="#" data-brand="JBL">JBL</a></li>
+          <li><a href="#" data-brand="Keskin Color">Keskin Color</a></li>
+          <li><a href="#" data-brand="Kiwi">Kiwi</a></li>
+          <li><a href="#" data-brand="Kobo">Kobo</a></li>
+          <li><a href="#" data-brand="Ks Games">Ks Games</a></li>
+          <li><a href="#" data-brand="LEGO Creator">LEGO Creator</a></li>
+          <li><a href="#" data-brand="LEGO Duplo">LEGO Duplo</a></li>
+          <li><a href="#" data-brand="Lego Icons">Lego Icons</a></li>
+          <li><a href="#" data-brand="Lego İdeaas">Lego İdeaas</a></li>
+          <li><a href="#" data-brand="LEGO Star Wars">LEGO Star Wars</a></li>
+          <li><a href="#" data-brand="Lenco">Lenco</a></li>
+          <li><a href="#" data-brand="Maped">Maped</a></li>
+          <li><a href="#" data-brand="Mickey Mouse">Mickey Mouse</a></li>
+          <li><a href="#" data-brand="Minnie Mouse">Minnie Mouse</a></li>
+          <li><a href="#" data-brand="Play-Doh">Play-Doh</a></li>
+          <li><a href="#" data-brand="Schneider">Schneider</a></li>
+          <li><a href="#" data-brand="Shotay">Shotay</a></li>
+          <li><a href="#" data-brand="Sony">Sony</a></li>
+          <li><a href="#" data-brand="Spider-Man">Spider-Man</a></li>
+
+
+
+
+
+
+        </ul>
+
+      </div>
+      <button class="clear-style-filter">Temizle ✖</button>
+      <br>
+      <br>
+      <button class="apply-filter">Filtrele</button>
+    </aside>
+
+    <section class="products-section">
+      <div class="section-header">
+        <h2 id="style-title">Casual</h2>
+
+        <div class="sort">
+          Sıralama:
+          <select id="sort-select">
+            <option>Popüler</option>
+            <option>Ücret: Azalan>Artan</option>
+            <option>Ücret: Artan>Azalan</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="product-grid">
+
+      </div>
+
+      <div class="pagination">
+        <button id="prev-btn">&larr; Önceki Sayfa</button>
+        <span class="pages" id="page-numbers"></span>
+        <button id="next-btn">Sonraki Sayfa &rarr;</button>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+
+    <div class="newsletter">
+      <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <form class="newsletterform">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe to Newsletter</button>
+      </form>
+    </div>
+
+    <div class="footercontent">
+      <div class="footercolumn">
+        <h3>SHOP.CO</h3>
+        <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+        <div class="socialicons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+
+      <div class="footercolumn">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolumn">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Delivery Details</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolumn">
+        <h4>FAQ</h4>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Manage Deliveries</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Payments</a></li>
+        </ul>
+      </div>
+
+      <div class="footercolumn">
+        <h4>RESOURCES</h4>
+        <ul>
+          <li><a href="#">Free eBooks</a></li>
+          <li><a href="#">Development Tutorial</a></li>
+          <li><a href="#">How to - Blog</a></li>
+          <li><a href="#">Youtube Playlist</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerbottom">
+      <p>Shop.co © 2000-2023, All Rights Reserved</p>
+      <div class="paymenticons">
+        <img src="visa.png" alt="Visa">
+        <img src="mastercard.png" alt="MasterCard">
+        <img src="paypal.png" alt="PayPal">
+        <img src="applepay.png" alt="Apple Pay">
+        <img src="googlepay.png" alt="Google Pay">
+      </div>
+    </div>
+    <h6>TİCARİ BİR AMACI YOKTUR.AYBÜKE DURMUŞ TARAFINDAN ÇALIŞMA AMAÇLI YAPILMIŞTIR</h6>
+  </footer>
+  <script src="Categorypage.js">
+  </script>
+  <script src="../Header/Header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

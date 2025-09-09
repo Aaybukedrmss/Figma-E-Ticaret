@@ -1,0 +1,94 @@
+/*Div*/
+.card-form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 350px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 520px;
+        }
+        
+        .form-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .card-number {
+            letter-spacing: 1px;
+        }
+        
+        .expiry-cvv {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .expiry {
+            flex: 2;
+        }
+        
+        .cvv {
+            flex: 1;
+        }
+        
+        .expiry-inputs {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .expiry-inputs input {
+            text-align: center;
+        }
+        
+        button.card {
+            background-color: #767a76;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 40px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button.card:hover {
+            background-color: #474947;
+        }
+        
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        input.invalid {
+            border-color: red;
+        }
+
+

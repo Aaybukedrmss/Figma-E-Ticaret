@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+
+/*Favori ürünlerim*/
+.favorilerim{
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.inner_favorilerim {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    margin: 20px;
+}
+
+.child_favorilerim {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+.child_favorilerim {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.child_favorilerim:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.childfavorilerim_img {
+    position: relative;
+}
+.childfavorilerim_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    color: red;
+   
+}
+
+.fav-icon:hover {
+    background: rgba(255, 0, 0, 0.9);
+    color: #fff;
+}
+
+.fav-icon i {
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+.fav-icon i:hover {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+.detail {
+    margin-top: 10px;
+}
+
+
+.detail p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rating ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.ratingtop ul li {
+    margin-right: 5px;
+}
+
+.rating ul li i {
+    color: #f5c518;
+    font-size: 18px;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.currentprice {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+}
+
+.oldprice {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #ff6f61;
+    background-color: #fff5f5;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.view-all {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.view-all:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

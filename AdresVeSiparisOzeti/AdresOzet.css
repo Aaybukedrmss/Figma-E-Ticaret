@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.left {
+    flex: 3;
+}
+
+.right {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    background: #fafafa;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+.adres-container {
+    display: flex;
+    gap: 20px;
+}
+.adres{
+    overflow: hidden;
+}
+
+.adres h3 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+.adres h3 a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.adres-kutu {
+    border: 1px solid #242424;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.adres-kutu.secili {
+    border-color: #242424;
+}
+
+.adres-kutu.pasif {
+    color: #242424;
+}
+
+.seciliadres {
+    color: #01b425;
+}
+
+.gri {
+    color: #242424;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.check input {
+    margin-right: 8px;
+}
+
+.teslimat-secim {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.teslimat-secim i{
+    width: 40px;
+}
+
+.teslimatdiv{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.kargoucreti{
+   margin-left: 10px;
+}
+.tarih {
+    margin-left: auto;
+    text-align: right;
+    font-size: 14px;
+}
+
+.ozet-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.toplam {
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    background: #0046ad;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #003080;
+}
+
+
+
+

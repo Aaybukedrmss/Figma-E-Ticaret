@@ -1,0 +1,72 @@
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        margin: 10px auto;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        width: 350px;
+        transform: scale(0.8);
+    }
+    .container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        background-color: #babbbc;
+        color: #fff;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        font-weight: bold;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .error {
+        font-size: 12px;
+        color: red;
+        display: none;
+    }
+    .kayitol {
+        width: 100%;
+        padding: 10px;
+        background-color: #555a56;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .kayitol:hover {
+        background-color: #218838;
+    }
+    .overlay {
+        display: none;
+    }
+    .success-card {
+        display: none;
+    }

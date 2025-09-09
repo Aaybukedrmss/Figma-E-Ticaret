@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="KartBilgileriEnter.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Ödeme/Checkout</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <h5>
+                Kaydolun ve ilk siparişinizde %20 indirim kazanın. Hemen Kaydolun
+                <i class="fa-solid fa-x"></i>
+            </h5>
+        </div>
+        <div class="navbar">
+            <h2>SHOP.CO</h2>
+            <ul>
+                <li><a href="/SiteAnasayfa/SiteAnasayfa.html">Anasayfa</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Hobi & Oyuncak</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Kitap</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Kırtasiye</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Elektronik</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Müzik</a></li>
+                <li><a href="/Categorypage/Categorypage.html">Bilgisayar & Tablet</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="button">Ara</button>
+            </div>
+            <div class="icons">
+
+                <div class="alısverissepet">
+                    <a href="../Sepet/Sepet.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="icon-menu-container">
+                    <button class="icon-button" id="menuToggle">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <div class="icon-dropdown-menu" id="dropdownMenu">
+                        <a href="../Profilim/Profilim.html">Profil / Hesap Ayarları</a>
+                        <a href="../Siparislerim/Siparislerim.html">Siparişlerim</a>
+                        <a href="../Favorilerim/Favorilerim.html">Favorilerim</a>
+                        <a href="../Yardim/Yardim.html">Yardım/Şikayet/Öneri</a>
+                        <a href="../Cikis/Cikis.html">Çıkış Yap</a>
+                    </div>
+                </div>
+                <a href="../Favorilerim/Favorilerim.html"><i class="fa-solid fa-heart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="card-form">
+        <div class="form-title">KART NUMARASI</div>
+
+        <form id="creditCardForm">
+            <div class="form-group">
+                <label for="cardNumber">KART NUMARASI</label>
+                <input type="text" id="cardNumber" class="card-number" maxlength="19" placeholder="1234 5678 9012 3456">
+                <div class="error" id="cardNumberError">Geçersiz kart numarası</div>
+            </div>
+
+            <div class="form-group">
+                <label for="cardName">KART SAHİBİ</label>
+                <input type="text" id="cardName" placeholder="Ad Soyad">
+                <div class="error" id="cardNameError">Bu alan boş bırakılamaz</div>
+            </div>
+
+            <div class="form-group">
+                <label>GECERLILIK TARIHI</label>
+                <div class="expiry-cvv">
+                    <div class="expiry">
+                        <div class="expiry-inputs">
+                            <div style="flex: 1;">
+                                <input type="text" id="expiryMonth" maxlength="2" placeholder="AA" pattern="\d*">
+                                <div class="error" id="expiryMonthError">Geçersiz ay</div>
+                            </div>
+                            <span style="align-self: center;">/</span>
+                            <div style="flex: 1;">
+                                <input type="text" id="expiryYear" maxlength="2" placeholder="YY" pattern="\d*">
+                                <div class="error" id="expiryYearError">Geçersiz yıl</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cvv">
+                        <input type="text" id="cvv" maxlength="3" placeholder="123" pattern="\d*">
+                        <label for="cvv" style="text-align: center;">CVV</label>
+                        <div class="error" id="cvvError">Geçersiz CVV</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="card" type="submit">GÖNDER</button>
+        </form>
+    </div>
+
+
+
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <form class="newsletterform">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe to Newsletter</button>
+            </form>
+        </div>
+
+        <div class="footercontent">
+            <div class="footercolumn">
+                <h3>SHOP.CO</h3>
+                <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+                <div class="socialicons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+
+            <div class="footercolumn">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="footercolumn">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Delivery Details</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footercolumn">
+                <h4>FAQ</h4>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Manage Deliveries</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="footercolumn">
+                <h4>RESOURCES</h4>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <div class="paymenticons">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="MasterCard">
+                <img src="paypal.png" alt="PayPal">
+                <img src="applepay.png" alt="Apple Pay">
+                <img src="googlepay.png" alt="Google Pay">
+            </div>
+        </div>
+        <h6>TİCARİ BİR AMACI YOKTUR.AYBÜKE DURMUŞ TARAFINDAN ÇALIŞMA AMAÇLI YAPILMIŞTIR</h6>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('creditCardForm');
+            const cardNumber = document.getElementById('cardNumber');
+            const cardName = document.getElementById('cardName');
+            const expiryMonth = document.getElementById('expiryMonth');
+            const expiryYear = document.getElementById('expiryYear');
+            const cvv = document.getElementById('cvv');
+
+            // Format card number with spaces
+            cardNumber.addEventListener('input', function (e) {
+                let value = e.target.value.replace(/\s+/g, '');
+                if (value.length > 0) {
+                    value = value.match(new RegExp('.{1,4}', 'g')).join(' ');
+                }
+                e.target.value = value;
+            });
+
+            // Validate form on submit
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                let isValid = true;
+
+                // Validate card number (16 digits)
+                const cardNumberValue = cardNumber.value.replace(/\s+/g, '');
+                if (!/^\d{16}$/.test(cardNumberValue)) {
+                    document.getElementById('cardNumberError').style.display = 'block';
+                    cardNumber.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('cardNumberError').style.display = 'none';
+                    cardNumber.classList.remove('invalid');
+                }
+
+                // Validate card name
+                if (cardName.value.trim() === '') {
+                    document.getElementById('cardNameError').style.display = 'block';
+                    cardName.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('cardNameError').style.display = 'none';
+                    cardName.classList.remove('invalid');
+                }
+
+                // Validate expiry month
+                const month = parseInt(expiryMonth.value);
+                if (isNaN(month) || month < 1 || month > 12) {
+                    document.getElementById('expiryMonthError').style.display = 'block';
+                    expiryMonth.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('expiryMonthError').style.display = 'none';
+                    expiryMonth.classList.remove('invalid');
+                }
+
+                // Validate expiry year (assuming current century)
+                const currentYear = new Date().getFullYear() % 100;
+                const year = parseInt(expiryYear.value);
+                if (isNaN(year) || year < currentYear || year > currentYear + 20) {
+                    document.getElementById('expiryYearError').style.display = 'block';
+                    expiryYear.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('expiryYearError').style.display = 'none';
+                    expiryYear.classList.remove('invalid');
+                }
+
+                // Validate CVV
+                if (!/^\d{3,4}$/.test(cvv.value)) {
+                    document.getElementById('cvvError').style.display = 'block';
+                    cvv.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    document.getElementById('cvvError').style.display = 'none';
+                    cvv.classList.remove('invalid');
+                }
+
+                // If all valid, show success
+                if (isValid) {
+                    alert('Kart bilgileri başarıyla gönderildi!');
+                    form.reset();
+                }
+            });
+
+            // Real-time validation for expiry month
+            expiryMonth.addEventListener('input', function () {
+                if (this.value.length === 2) {
+                    const month = parseInt(this.value);
+                    if (isNaN(month)) return;
+
+                    if (month < 1 || month > 12) {
+                        document.getElementById('expiryMonthError').style.display = 'block';
+                        this.classList.add('invalid');
+                    } else {
+                        document.getElementById('expiryMonthError').style.display = 'none';
+                        this.classList.remove('invalid');
+                        expiryYear.focus();
+                    }
+                }
+            });
+
+            // Real-time validation for CVV
+            cvv.addEventListener('input', function () {
+                if (!/^\d*$/.test(this.value)) {
+                    this.value = this.value.replace(/[^\d]/g, '');
+                }
+
+                if (this.value.length > 3) {
+                    this.value = this.value.slice(0, 3);
+                }
+            });
+        });
+    </script>
+    <script src="../Header/Header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
